@@ -106,10 +106,17 @@
 
 }
 
+.indexLight .gridcontainer {
+    display: grid;
+    font-size: 30px;
+    column-gap: 10px;
+    row-gap: 20px;
+    grid-template-columns: auto auto auto;
+}
+
 .indexLight .projects a:link {
     color:#f88484;
     text-decoration: none;
-    font-size: 100;
     font-weight: bold;
     padding: 30px 30px;
 }
