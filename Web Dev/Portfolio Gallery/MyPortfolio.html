@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        My Portfolio Gallery
+    </title>
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="DarkStyle.css">
+    <link rel="stylesheet" href="LightStyle.css">
+</head>
+
+<body>
+<!--Outermost Div switch light and dark mode-->
+    <div id="shell" class="DarkStyle">
+        <h1>Portfolio</h1>
+
+        <button id="Dark" onClick="onClick('DarkStyle')" style="display:none;">Dark Mode</button>
+        <button id="Light"  onclick="onClick('LightStyle')">Light Mode</button>
+ <!--Navbar- contact info- style change light/dark-->
+
+ <!--Tiles Content- divs w/ 4 columns with content displaying html, css, possibly java?-->
+ <div class="row">
+    <div class="column">
+        <div class="content">
+            <h2>
+                Tile 1 Content
+            </h2>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Duis cursus ante non ligula pellentesque, a facilisis eros tempus. 
+                Pellentesque accumsan orci eros, vel varius nulla pretium nec. Maecenas 
+                eu magna luctus, porta justo at, bibendum massa. Aenean fringilla arcu 
+                mi, eget elementum urna fringilla vel. Pellentesque et eros elit. 
+                Phasellus vestibulum facilisis semper. Fusce nisi eros, posuere ut ipsum 
+                in, scelerisque porta justo.
+            </p>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="content">
+            <h2>
+                Tile 2 Content
+            </h2>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Duis cursus ante non ligula pellentesque, a facilisis eros tempus. 
+                Pellentesque accumsan orci eros, vel varius nulla pretium nec. Maecenas 
+                eu magna luctus, porta justo at, bibendum massa. Aenean fringilla arcu 
+                mi, eget elementum urna fringilla vel. Pellentesque et eros elit. 
+                Phasellus vestibulum facilisis semper. Fusce nisi eros, posuere ut ipsum 
+                in, scelerisque porta justo. 
+            </p>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="content">
+            <h2>
+                Tile 3 Content
+            </h2>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Duis cursus ante non ligula pellentesque, a facilisis eros tempus. 
+                Pellentesque accumsan orci eros, vel varius nulla pretium nec. Maecenas 
+                eu magna luctus, porta justo at, bibendum massa. Aenean fringilla arcu 
+                mi, eget elementum urna fringilla vel. Pellentesque et eros elit. 
+                Phasellus vestibulum facilisis semper. Fusce nisi eros, posuere ut ipsum 
+                in, scelerisque porta justo.
+            </p>
+        </div>
+    </div>
+
+ <!----> 
+    </div>
+ 
+</body>
+
+<script lang="text/javascript">
+    function onClick(style){
+        let darkButton = document.getElementById("Dark");
+        let lightButton = document.getElementById("Light");
+        let outer = document.getElementById("shell");
+        shell.setAttribute("class", style);
+        if(style==="DarkStyle"){
+            darkButton.style.display = "none";
+            lightButton.style.display = "";
+        }
+        else{
+            darkButton.style.display = "";
+            lightButton.style.display = "none";
+            
+        }
+    }
+</script>
+
+</html>

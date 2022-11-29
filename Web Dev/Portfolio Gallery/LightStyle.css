@@ -1,0 +1,83 @@
+/* Light Mode- color palette lights-#cdfbbe #fcdbd9 text-#23231a dark colors-#508731 #f582dc */
+.LightStyle{
+    background-color: #cdfbbe;
+}
+/* Box sixing throughought body*/
+* {
+    box-sizing: border-box;
+}
+
+/*Button Styling*/
+.LightStyle button{
+    background-color: #23231a;
+    color: #fcbdd9;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+}
+
+.LightStyle button:hover {
+    background-color: #fcbdd9;
+    color: #23231a;
+}
+
+/* Padding throughought body*/
+.LightStyle body {
+    padding: 10px;
+}
+
+/*Header*/
+.LightStyle h1{
+    color: #23231a
+}
+
+.LightStyle h2{
+    color: #23231a
+}
+
+.LightStyle p {
+    color: #23231a;
+    overflow: auto;
+}
+
+/* row and column decoration */
+.LightStyle .row {
+    margin: 0px -18px;
+    padding: 8px;
+}
+
+.LightStyle .row > .column {
+    padding: 6px;
+}
+
+.LightStyle .column {
+    float: left;
+    width: 25%;
+}
+
+.LightStyle .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* content decoration */
+.LightStyle .content {
+    background-color: #fcbdd9;
+    padding: 10px;
+    border: 5px solid #cdfbbe;
+    border-radius: 25px;
+}
+
+/* Content Box Link/Label*/
+.LightStyle .a {
+    text-decoration: none;
+    color: #23231a ;
+}
+/* Content Box Link/Label Hover Color*/
+.LightStyle .a:hover {
+    color: #3f4d40 ;
+}

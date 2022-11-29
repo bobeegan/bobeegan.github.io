@@ -1,0 +1,88 @@
+/*Dark Mode- Color Palette dark-#23231a greens dark-light-#98ce78 #cdfbbe pinks dark-light-#ffc2d8 #fcdbd9 */
+.DarkStyle{
+    background-color: #23231a;
+}
+
+/* Box sixing throughought body 
+* {
+    box-sizing: border-box;
+}
+*/
+
+/*Button Styling*/
+.DarkStyle button{
+    background-color: #cdfbbe;
+    color: #23231a;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+}
+
+.DarkStyle button:hover {
+    background-color: #2b0817;
+    color: #cdfbbe;
+}
+
+/* Padding throughought body*/
+.Darkstyle body{
+    padding: 10px;
+}
+
+/*Header*/
+.DarkStyle h1{
+    color: #fcbdd9
+}
+
+.DarkStyle h2{
+    color: #fcbdd9
+}
+
+.DarkStyle p{
+    color:#98ce78;
+    overflow: auto;
+}
+
+/* row and column decoration */
+.DarkStyle .row {
+    margin: 0px -18px;
+    padding: 8px;
+}
+
+.DarkStyle .row > .column {
+    padding: 6px;
+}
+
+.DarkStyle .column {
+    float: left;
+    width: 25%;
+}
+
+.DarkStyle .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* content decoration */
+.DarkStyle .content {
+    background-color: #23231a;
+    padding: 10px;
+    border: 5px solid #cdfbbe;
+    border-radius: 25px;
+}
+
+/* Content Box Link/Label*/
+.DarkStyle .a {
+    text-decoration: none;
+    color: #ffc2d8 ;
+}
+/* Content Box Link/Label Hover Color*/
+.Darkstyle .a:hover {
+    color: #fcbdd9 ;
+}
+
+
+

@@ -1,0 +1,47 @@
+div.main-body {
+	display: grid;
+	grid-template-columns: minmax(300px , auto)1fr;
+	grid-template-areas: "navbar mainContent";
+	grid-gap: 20px;
+}
+
+nav#navbar {
+	grid-area: navbar;
+	position: fixed;
+}
+
+nav#navbar a {
+	display: block;
+	border: 1px solid #173f26;
+    border-radius: 25px;
+	padding: 5px;
+	margin: 10px 0;
+	text-decoration: none;
+	color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main#main-doc {
+	grid-area: mainContent;
+    font-family: Tahoma, Verdana, sans-serif;
+}
+
+header {
+	font-size: 1.5rem;
+	font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+code {
+	background-color: #a8e7c0;
+	display: block;
+	padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*img {
+    float: left;
+    position: relative;
+    display: block;
+    margin-top: 50%;
+}

@@ -1,0 +1,162 @@
+/*Index Light*/
+/*Colors- pinkish-eggshell fac2c2, burgundy 7f021d, mint 92e4ba, periwinkle 547ad1, pale orange e46147*/
+* {
+    box-sizing: border-box;
+}
+
+
+.indexLight {
+    background-image: url("../indexLightBG.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*Button Styling*/
+.indexLight button{
+    background-color: #04051b;
+    color: #fac2c2;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+    
+}
+
+.indexLight button:hover {
+    background-color: #0d1050;
+    color: #ff8196;
+}
+
+    /*Navbar*/
+.indexLight ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: sticky; 
+    top: 0;
+    background-color: #547ad1;
+    box-shadow: 5px 5px 10px #75021d;
+    border-radius: 15px;
+}
+
+.indexLight li {
+    float: left;
+}
+
+.indexLight li a{
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;    
+}
+
+.indexLight li a:hover {
+    background-color: #3a538d;
+    color: #e6053a;
+}
+
+.indexLight h1 {
+    margin: 20px;
+    font-family: 'Tahoma, Verdana, sans-serif';
+    text-align: center;
+    font-weight: bold;
+    font-size: 90;
+    color: #700606;
+}
+
+.indexLight .container {
+    background-color: #92e4ba;
+    margin: 15px 100px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    align-content: center;
+}
+
+.indexLight p {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: #75021d;
+    font-size: 40;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.indexLight p a:link {
+    color:#f06a50;
+    text-decoration: none;
+}
+
+.indexLight p a:visited {
+    color: #dd4020;
+    text-decoration: none;
+}
+
+.indexLight .projects {
+    background-color: #92e4ba;
+    margin: 15px 100px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+
+}
+
+.indexLight .projects a:link {
+    color:#f88484;
+    text-decoration: none;
+    font-size: 100;
+    font-weight: bold;
+    padding: 30px 30px;
+}
+    
+.indexLight .projects a:visited {
+    color: #f88484;
+    text-decoration: none;
+}
+  
+.indexLight .form {
+    display: block;
+    align-items: center;
+    margin: 15px;
+    }
+
+.indexLight .form textarea {
+    height: 300px;
+    width: 500px;
+    color: #04051b;
+    background-color: #759296;
+    box-shadow: 5px 5px 10px #c37cdf;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.indexLight .form button {
+    background-color: #700606;
+    color: #547ad1;
+    border: hidden;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 10px;
+    height: 40px;
+    width: 120px;
+    margin-top: 20px;
+}
+
+.indexLight .form button:hover {
+    background-color: #723838;
+    color: #1a51d1;
+}
+        
+.indexLight .form input {
+    height: auto;
+    width: fit-content;
+    background-color: #fac2c2;
+    color: #04051b;
+    border-radius: 10px;
+    margin: 20px;
+}

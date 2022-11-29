@@ -1,0 +1,169 @@
+/*Index Dark*/
+/*Colors- navy 04051b, blue-grey 3b6064, orange c43607, mint 79e6c5, lilac 855b96 */
+* {
+    box-sizing: border-box;
+}
+
+.indexDark {
+    background-color: #04051b;
+    width: 100%;
+    height: 100%;
+}
+
+/*Button Styling*/
+.indexDark button{
+    background-color: #fac2c2;
+    color: #04051b;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    
+}
+
+.indexDark button:hover {
+    background-color: #ff8196;
+    color: #0d1050;
+}
+
+
+    /*Navbar*/
+.indexDark ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 125px;
+    overflow: hidden;
+    position: fixed; 
+    left: 8px;
+    background-color: #3b6064;
+    box-shadow: 5px 5px 10px #855b96;
+    border-radius: 15px;
+}
+    
+
+.indexDark li {
+    float: left;
+}
+
+
+.indexDark li a{
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #c37cdf;
+    font-weight: bold;  
+}
+    
+.indexDark li a:hover {
+    background-color: #759296;
+    color: #4c3455;
+}
+    
+.indexDark h1 {
+    margin: 20px;
+    font-family: 'Tahoma, Verdana, sans-serif';
+    text-align: center;
+    font-weight: bold;
+    font-size: 90;
+    color: #fa631c;
+}
+    
+.indexDark .container {
+    background-color: #5a1f0b;
+    margin: 20px 140px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    
+}
+
+
+.indexDark .projects {
+    background-color: #5a1f0b;
+    margin: 20px 140px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    
+}
+
+.indexDark .projects a:link {
+    color:#f88484;
+    text-decoration: none;
+    font-size: 100;
+    font-weight: bold;
+    padding: 30px 30px;
+}
+    
+.indexDark .projects a:visited {
+    color: #f88484;
+    text-decoration: none;
+}
+    
+    
+.indexDark p {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: #c37cdf;
+    font-size: 40;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+    
+.indexDark p a:link {
+    color:#f88484;
+    text-decoration: none;
+}
+    
+.indexDark p a:visited {
+    color: #f88484;
+    text-decoration: none;
+}
+
+        /*Contact Form */
+.indexDark .form {
+    display: block;
+    align-items: center;
+    margin: 15px;
+    }
+
+.indexDark .form textarea {
+    height: 300px;
+    width: 500px;
+    color: #04051b;
+    background-color: #759296;
+    box-shadow: 5px 5px 10px #c37cdf;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.indexDark .form button {
+    background-color: #04051b;
+    color: #f88484;
+    border: hidden;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 10px;
+    height: 40px;
+    width: 120px;
+    margin-top: 20px;
+    
+}
+
+.indexDark .form button:hover {
+    background-color: #0d1050;
+    color: #8d1b1b;
+}
+        
+.indexDark .form input {
+    height: auto;
+    width: fit-content;
+    background-color: #855b96;
+    color: #04051b;
+    border-radius: 10px;
+    margin: 20px;
+}
+    

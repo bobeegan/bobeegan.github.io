@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <link rel="stylesheet" href="TechDocJStyle.css">
+</head>
+
+<body>
+    <div class="main-body">
+        <nav id="navbar">
+            <header>Menu</header>
+            <a href="#Intro" class="nav-link">
+				What is Java
+            </a>
+            <a href="#Classes and Objects" class="nav-link">
+                Classes and Objects
+            </a>
+            <a href="#Method" class="nav-link">
+                What is a Java Method?
+            </a>
+            <a href="#Inheritance" class="nav-link">
+                Inheritance
+            </a>
+            <a href="#Exceptions" class="nav-link">
+                Exceptions
+            </a>
+            <a href="https://www.w3schools.com/java/default.asp" target="_blank">
+                <img src="javaicon.png" alt="w3schools Java Homepage">
+            </a>
+    
+        </nav>
+
+        <main id="main-doc">
+            <section class="main-section" id="Intro">
+                <header>What is Java?</header>
+                <p>
+                    Java is a free, open-sourced Object Oriented programming (OOP) language owned by Oracle. 
+                    Among its many uses are mobile, web and desktop applications, as well as games and 
+                    database connections. It works across many different platforms and its clear and 
+                    easy to understand structure makes Java programs versatile and reusable. 
+                    It is syntactically similar to C# and C++, making it easy for developers to switch 
+                    between languages if the need arises. These features make Java one of the most popular
+                    and in-demand languages.  
+                </p><br>
+                <br>
+                <p>Lets take a look at a Java "Hello World" program</p>
+                <code>
+                    public class Demo 
+                    <br>
+                        {   
+                            <br>
+                                public static void main(String[] args)
+                            <br>
+                            {
+                                <br>
+                                System.out.println("Hello World!");
+                                <br>
+                            }
+                        <br>   
+                    }
+                </code>
+                <p>
+                    The above program shows the very basics of Java syntax-
+                    <ul>
+                        <li>class declaration- we've called this program "Demo"</li>
+                        <li>main method- in parentheses, a parameter is specified- in this instance it is a String array</li>
+                        <li>System.out.println method is called- this prints the text within the quotes</li>
+                    </ul>
+                </p>
+            </section>
+
+            <section class="main-section" id="Classes and Objects">
+                <header>Java Classes and Objects</header>
+                <p>
+                    In object oriented programming, objects containing methods and data are created, allowing programmers
+                    to reference these objects in their code without individually restating all of the object's qualities
+                    or procedures. Objects are specific instances of classes, in the same way that "coffee", "tea" and "water" are all 
+                    specific types of beverage. This is why OOP is so versatile. 
+                </p>
+                <br>
+                <p>
+                    As an example, if you needed to creat an address book, using Java you could create a class 
+                    representing an address and all its associated data. To do this, you could create a class 
+                    called "address", then give it string attributes representing a mailing address and an 
+                    associated name. This class then allows you to instantiate "address" objects with specific names
+                    and addresses which can then be referenced and manipulated as needed through various methods as 
+                    needed.
+                </p>
+            </section>
+
+
+            <section class="main-section" id="Method">
+                <header>Methods</header>
+                <p>
+                    A Java method or function is a block of code that runs only when it is called and must be 
+                    declared within a class. Methods can contain parameters, which are variables that are used 
+                    in the operation of the method. These parameters can be many types of data, for instance 
+                    Strings or Integers, and the data type must be defined in the method's name. 
+                </p>
+                <br>
+                <p>
+                    This is useful because once you have defined a method, you do not need to do so again and 
+                    can reuse it as needed, saving time and simplifying code. Java has many predefined methods,
+                    including System.out.println() which is used in the "Hello World" example, but you can create 
+                    your own as needed.
+                </p>
+            </section>
+
+            
+            <section class="main-section" id="Inheritance">
+                <header>Inheritance</header>
+                <p>
+                    Methods in Java can be inherited from one class to another- from a designated superclass to a 
+                    designated subclass. This is done using the keyword "extends" where the subclass extends the 
+                    superclass.
+                </p>
+                <br>
+                <p> 
+                    This is useful when you need multiple specific versions of a class. For example, say you had a
+                    "vehicle" class with an attribute defining the number of wheels and a method for acceleration. 
+                    You could then create two subclasses called "car" and "truck". Both would inherit the 
+                    original attributes and methods of the vehicle class, but you could give each new class its own
+                    new parameters as well, and then instantiate "car" or "truck" objects. These instantiated objects 
+                    would all inherit the method for accelerating without specifically defining that 
+                    method in the "car" or "truck" classes- but if you gave the "truck" class a honk method and the 
+                    "car" class a breaking method, you could not call the honk method on a "car" object or the break
+                    method on a "truck" object.
+                </p>
+            </section>
+
+            <section class="main-section" id="Exceptions">
+                <header>Exceptions</header>
+                <p>
+                    An exception occurs when there is an error in the execution of a Java program. In this event,
+                    Java will throw an error message. The "try" and "catch" statements allow you to specify blocks
+                    of code to be tested for errors and executed in the event of an error, respectively. This allows
+                    you to find how and where errors are occurring- whether that is because of end user error, a 
+                    problem in the code itself, or something else.  
+                </p>
+            </section>
+        </main>
+    </div>
+
+</body>
+
+</html>

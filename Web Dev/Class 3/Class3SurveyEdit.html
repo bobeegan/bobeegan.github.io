@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Bodoni Moda' rel='stylesheet'>
+    <title>
+        Build a Survey Form using HTML and CSS
+    </title>
+ 
+    <style>
+ 
+        /* Styling the Body element i.e. Color,
+        Font, Alignment */
+        body {
+            background-color: #150820;
+            font-family: 'Bodoni-Moda';
+            text-align: center;
+            font-size: 125%;
+            color: #64ff9f;
+        }
+ 
+        /* Styling the Form (Color, Padding, Shadow) */
+        form {
+            background-color: #823fc2;
+            max-width: 500px;
+            border-radius: 25px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px #a351f0;
+        }
+ 
+        /* Styling form-control Class */
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+ 
+        /* Styling form-control Label */
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+ 
+        /* Styling form-control input,
+        select, textarea */
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 25px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+ 
+        /* Styling form-control Radio
+        button and Checkbox */
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+ 
+        /* Styling Button */
+        button {
+            background-color: #64ff9f;
+            border: 1px solid #150820;
+            border-radius: 25px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+  
+<body>
+    <h1>Music Preference Survey</h1>
+  
+    <!-- Create Form -->
+    <form id="form">
+ 
+        <!-- Details -->
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Name
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="name"
+                   placeholder="Enter your name" />
+        </div>
+  
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email
+            </label>
+ 
+            <!-- Input Type Email-->
+            <input type="email"
+                   id="email"
+                   placeholder="Enter your email" />
+        </div>
+  
+        <div class="form-control">
+            <label for="age" id="label-age">
+                Age
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="age"
+                   placeholder="Enter your age" />
+        </div>
+  
+        <div class="form-control">
+            <label for="role" id="label-role">
+                How do you listen to music?
+            </label>
+             
+            <!-- Dropdown options -->
+            <select name="method" id="method">
+                <option value="subscription">Streaming Subscription</option>
+                <option value="radio">Radio</option>
+                <option value="digital purchase">Digital Purchase</option>
+                <option value="physical purchase">Physical Purchase</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+  
+        <div class="form-control">
+            <label>
+                Do you listen to albums in their entirety, or singles on  playlists?
+            </label>
+ 
+            <!-- Input Type Radio Button -->
+            <label for="type-1">
+                <input type="radio"
+                       id="type-1"
+                       name="type">Albums</input>
+            </label>
+            <label for="type-2">
+                <input type="radio"
+                       id="type-2"
+                       name="type">Playlists</input>
+            </label>
+            <label for="type-3">
+                <input type="radio"
+                       id="type-3"
+                       name="type">Both</input>
+            </label>
+        </div>
+  
+        <div class="form-control">
+            <label>What genres do you listen to?
+                <small>(Check all that apply)</small>
+            </label>
+            <!-- Input Type Checkbox -->
+            <label for="inp-1">
+                <input id="inp-1" type="checkbox"
+                       name="inp">Pop</input></label>
+            <label for="inp-2">
+                <input id="inp-2" type="checkbox"
+                       name="inp">Rock</input></label>
+            <label for="inp-3">
+                <input id="inp-3" type="checkbox"
+                       name="inp">Rap</input></label>
+            <label for="inp-4">
+                <input id="inp-4" type="checkbox"
+                       name="inp">R&B</input></label>
+            <label for="inp-5">
+                <input id="inp-5" type="checkbox"
+                       name="inp">EDM</input></label>
+            <label for="inp-6">
+                <input id="inp-6" type="checkbox"
+                       name="inp">Classical</input></label>
+            <label for="inp-7">
+                <input id="inp-7" type="checkbox"
+                       name="inp">Latin</input></label>
+            <label for="inp-8">
+                <input id="inp-8" type="checkbox"
+                       name="inp">Soundtrack</input></label>
+            <label for="inp-9">
+                <input id="inp-9" type="checkbox"
+                       name="inp">Indie</input></label>
+            <label for="inp-10">
+                <input id="inp-10" type="checkbox"
+                       name="inp">Folk</input></label>
+            <label for="inp-11">
+                <input id="inp-11" type="checkbox"
+                    name="inp">Jazz</input></label>
+            <label for="inp-12">
+                <input id="inp-12" type="checkbox"
+                    name="inp">Country</input></label>
+            
+        </div>
+  
+        <div class="form-control">
+            <label for="comment">
+                Any comments or suggestions
+            </label>
+ 
+            <!-- multi-line text input control -->
+            <textarea name="comment" id="comment"
+                placeholder="Enter your comment here">
+            </textarea>
+        </div>
+  
+        <!-- Multi-line Text Input Control -->
+        <button type="submit" value="submit">
+            Submit
+        </button>
+    </form>
+</body>
+  
+</html>

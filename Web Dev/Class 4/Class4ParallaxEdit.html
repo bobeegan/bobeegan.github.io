@@ -1,0 +1,170 @@
+<!--IST144 Class 4 Parallax Project-->
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+  
+        /* Styling the body */
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+  
+        /* Styling the first parallax's 
+        height, width and background color */
+        .parallax-1 {
+            width: 100%;
+            height: 600px;
+            background: url("plaxbg.jpg");
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+  
+        /* Styling the title of first parallax */
+        .parallax-1 h2 {
+            margin: auto;
+            position: relative;
+            left: 500x;
+            top: 150px;
+            width: 350px;
+            height: 35px;
+            padding: 10px;
+            border-radius: 25px;
+            background-color: rgb(5, 13, 54);
+            color: white;
+            font-family: Verdana, sans-serif;
+            text-align: center;
+        }
+  
+        /* Styling the second parallax's 
+        height, width and background color */
+        .parallax-2 {
+            width: 100%;
+            height: 600px;
+            background: url('WebbStarNursery.jpg');
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+  
+        /* Styling the title of second parallax */
+        .parallax-2 h2 {
+            margin: auto;
+            position: relative;
+            left: 500x;
+            top: 300px;
+            width: 600px;
+            height: 45px;
+            padding: 10px;
+            border-radius: 25px;
+            background-color: rgb(5, 13, 54);
+            color: rgb(255, 255, 255);
+            text-align: center;
+            font-size: 30px;
+            font-family: Verdana, sans-serif;
+        }
+        
+  
+        /* Styling the content or paragraph */
+        .para-1 {
+            padding: 50px;
+            border-radius: 25px;
+            background-color: rgb(5, 13, 54);
+            color: white;
+            font-size: 17px;
+            font-family: Verdana, sans-serif;
+        }
+  
+        /* Styling the content or paragraph */
+        .para-2 {
+            text-align: center;
+            padding: 25px;
+            bottom: 300px;
+            font-size: 17px;
+            font-family: Verdana, sans-serif;
+            border-radius: 25px;
+            background-color: rgb(5, 13, 54);
+            color: white;
+        }
+
+        /*link styling*/
+        a:link {
+        color: red;
+        background-color: transparent;
+        text-decoration: none;
+        }
+
+        a:visited {
+        color: red;
+        background-color: transparent;
+        text-decoration: none;
+        }
+
+    </style>
+</head>
+  
+<body>
+  
+    <!-- Giving title of the first parallax -->
+    <div class="parallax-1">
+        <h2>Recent NASA Projects</h2>
+    </div>
+  
+    <!--Content of first parallax -->
+    <div class="para-1">
+        <p>
+         The James Webb Space Telescope (pictured left) and DART (pictured right) programs are NASA's two of NASA's new projects. The Webb will allow us 
+         to see more of our universe than ever before with cameras and sensors which far outpace the Hubble's. The DART 
+         spacecraft is a test craft designed to asses our ability to redirect a potential Earth threatening asteroid.<br>
+         All information on this page comes from <a href="https://www.nasa.gov/" target="_blank">NASA's website.</a>
+        </p>
+    </div>
+  
+    <!-- Giving title of the first parallax -->
+    <div class="parallax-2">
+        <h2>James Webb Space Telescope</h2>
+    </div>
+  
+    <!--Content of first parallax -->
+    <div class="para-2">
+        <p>
+            The <a href="https://webb.nasa.gov/" target="_blank">James Webb Space Telescope</a> was launched from French Guiana on Christmas of 2021, 
+            and the first set of images it took was released to the public by NASA on July 11<sup>th</sup>,
+            2022.<br>
+            Webb's primary imaging device is the Near Infrared Camera (NIRCam). NIRCam is capable of detetecting
+            light from the earliest stars and galaxies in the process of formation, allowing us to peer backwards
+            in time and distantly into the universe to their creation. It can also detect light from younger and 
+            closer stars and galaxies- like younger stars in the Milky Way.<br>
+            NIRCam also has coronagraphs which will allow us to see planets orbiting nearby stars by blocking 
+            the light from brighter objects, just like shielding your eyes from the sun can allow you to see better.<br>
+            The Webb also has a spectrograph which will allow scientists to examine light being filtered through the 
+            atmospheres of exoplanets- and therefore learn about their chemical compositions.<br>
+            The image behind this section's header was taken by the Webb Telescope.
+
+        </p>
+    </div>
+  
+    <!--This will be same as first parallax-->
+    <div class="parallax-1">
+        <h2>Double Asteroid Redirection Test</h2>
+    </div>
+  
+    <div class="para-2">
+        <p>
+             The <a href="https://www.nasa.gov/specials/pdco/index.html#dart" target="_blank">DART spacecraft</a> successfully 
+             impacted with an asteroid on September 26<sup>th</sup>, 2022 as a test to determine our ability to alter an asteroid's 
+             course.<br> 
+             DART impacted with the Didymos binary asteroid system, made up of asteroids Didymos and Dimorphos. Specifically,
+             DART hit Dimorphos, the smaller asteroid of the two. On impact, Dimorphos generated a dust trail similar to the 
+             ones generated by comets and large chunks broke off of it.
+             <br> NASA scientists estimate that this impact shortened the orbit of the Didymos system by 1%, or about 10 minutes. 
+             This information allows scientists to understand how impacting asteroids alters their courses, so that if 
+             the Earth is threatened by one in the future, we will be able to calculate how much force must be generated to
+             protect our planet.
+
+        </p>
+    </div>
+</body>
+  
+</html>

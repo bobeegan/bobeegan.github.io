@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+   <title>
+        Wildlife Photography
+    </title>
+
+
+    <!--Style CSS-->
+    <link rel="stylesheet" href="class7style.css">
+
+</head>
+
+
+<body>
+  <div class="background" src="wildlifephotogbg.jpg">
+    <div class="myProducts">
+        <div class="myProducts-gallery">
+            <div class="d-flex justify-content-start">
+            <img src=
+"wildlife5.jpg"
+                alt="click here" 
+                onclick="myImageFunction(this)">
+            <img src=
+"wildlife1.jpg"
+                alt="click here"
+                onclick="myImageFunction(this)">
+            <img src=
+"wildlife3.jpg"
+                alt="click here" 
+                onclick="myImageFunction(this)">
+            <img src=
+"wildlife2.jpg"
+                alt="click here" 
+                onclick="myImageFunction(this)">
+
+            </div>
+    </div>
+    </div>
+        <div class="image-container">
+            <div class="center">
+            <img id="img-Box" src=
+"wildlife1.jpg"
+                alt="click here">
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function myImageFunction(productSmallImg) {
+            var productFullImg = document.getElementById("img-Box");
+            productFullImg.src = productSmallImg.src;
+        }
+    </script>
+</body>
+  
+</html>

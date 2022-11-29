@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1">
+
+    <title>My Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="favicon9.ico">
+    <!--colors- teal 457a7a, maroon 700606, yellow e1ff1c-->
+    <style>
+        /*General*/
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #457a7a; 
+        }
+
+        /*Navbar*/
+        ul {
+           list-style-type: none;
+           margin: 0;
+           padding: 0;
+           overflow: hidden;
+           position: sticky; 
+           top: 0;
+           background-color: #333333;
+           box-shadow: 5px 5px 10px #e1ff1c;
+           border-radius: 15px;
+        }
+
+        li {
+            float: left;
+        }
+        li a{
+            display: block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;    
+        }
+
+        li a:hover {
+            background-color: #272727;
+            color: #e1ff1c;
+        }
+
+        /*Section Headers*/
+        h1 {
+            margin: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            font-weight: bold;
+            font-size: 90;
+            color: #700606;
+        }
+        /*Basic Containers and Paragraphs*/
+        .container {
+            background-color: #333333;
+            margin: 15px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 20px;
+            align-content: center;
+        }
+
+        p {
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            color: #ffffff;
+            font-size: 40;
+            padding-left: 25%;
+            padding-right: 25%;
+        }
+
+        p a:link {
+            color:#e1ff1c
+        }
+        p a:visited {
+            color: #e1ff1c;
+        }
+
+        /*Project Images*/
+        img {
+            border-radius: 50%;
+            height: 300px;
+            width: 300px;
+            margin: 20px;
+            display: inline-block;
+        }
+
+        /*Contact Form */
+        .form {
+            display: block;
+            align-items: center;
+            margin: 15px;
+        }
+
+        .form textarea
+        {
+            height: 300px;
+            width: 500px;
+            color: #e1ff1c;
+            background-color: #272727;
+            box-shadow: 5px 5px 10px #e1ff1c;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .form button {
+            background-color: #457a7a;
+            color: #e1ff1c;
+            border: hidden;
+            font-size: 30px;
+            border-radius: 10px;
+            height: 40px;
+            width: 120px;
+            margin-top: 20px;
+        }
+
+        .form button:hover {
+            background-color: #236868;
+            color: #e1ff1c;
+        }
+        
+        .form input {
+            height: auto;
+            width: fit-content;
+            background-color: #272727;
+            color: #e1ff1c;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <!--Navbar-->
+    <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Contact">Contact</a></li>
+    </ul>
+    <!--About Me-->
+    <h1 id="About">
+        About Me
+    </h1>
+    
+    <div class="container">
+        <p>
+            Hi! My name is Tegan. I'm a Computer Science major at Mercer County Community College.
+            I've taken classes in Java and Python, and this project is for my Web Dev class. I plan
+            on working in front-end web dev while continuing my education and eventually transitioning 
+            to full stack development. <br><br> Click on any of the images in the Projects section below
+            to see what I've made in this class. All of my projects are based on 
+            <a href="https://www.geeksforgeeks.org/top-10-projects-for-beginners-to-practice-html-and-css-skills/"
+                target="blank">GeeksforGeeks Top 10 Projects for Beginners</a>.
+        </p>
+    </div>
+    <!--Projects-->
+    <h1 id="Projects"> 
+        My Projects
+    </h1>
+
+    <div class="container">
+
+                <a href="../Class 6/Class6Event.html" target="_blank">
+                    <img src="../Class 6/NatRateLogosq.jpg" alt="Event">
+                </a>
+            
+                <a href="../Class 5/RestaurantTestFile.html" target="_blank">
+                    <img src="../Class 5/C5HaloHalo.jpg" alt="Restaurant">    
+                </a>
+            
+                <a href="../Class 1 & 2/Class2TributeEdit.html" target="_blank">
+                    <img src="../Class 1 & 2/LacksFace.jpg" alt="Tribute Page">
+                </a>
+
+            <br>
+
+            <a href="../Class 4/Class4ParallaxEdit.html" target="_blank">
+                <img src="../Class 4/WebbStarNursery.jpg" alt="Parallax">
+            </a>
+
+            <a href="../Class 6/Class6Music.html" target="_blank">
+                <img src="../Class 6/folk-guitar-po-instrument.jpg" alt="Music">
+            </a>
+
+    </div>
+    
+
+    <!--Contact-->
+    <h1 id="Contact">
+        Contact
+    </h1>
+
+    <div class="container">
+        <div class="form">
+
+            <input type="email"
+                   id="email"
+                   placeholder="Email"
+                   
+                                        >
+                   <br>
+            <textarea id="text" placeholder="Get in touch!"></textarea>
+                   <br>
+            <button onClick="onClick()" type="submit" value="submit">
+                Submit
+            </button>
+
+        </div>
+    </div>
+
+</body>
+
+
+<script lang="text/javascript">
+    function onClick(){
+        let mail = document.getElementById("email");
+        let text = document.getElementById("text");
+
+        if(mail.value.length===0){
+            window.alert("Please enter an email");
+        }
+        else{
+            window.alert("Thank you for your submission!")
+        }
+    }
+</script>
+
+</html>
