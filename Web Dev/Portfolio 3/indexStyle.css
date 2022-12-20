@@ -66,6 +66,12 @@ li button:hover {
 p {
     color:#162d33;
     font-size: medium;
+    font-weight: bold;
+}
+
+p a {
+    text-decoration: none;
+    color: #493843;
 }
 
 h1 {
