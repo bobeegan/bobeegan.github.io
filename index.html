@@ -6,33 +6,25 @@
 
         <title>Tegan's Portfolio</title>
 
-        <link rel="icon" type="image/x-icon" href="Web Dev/Class 9/favicon9.ico">
+        <link rel="icon" type="image/x-icon" href="Web Dev/Portfolio 3/faviconClick.ico">
 
-        <link rel="stylesheet" href="Web Dev/Class 11/indexLight.css">
-        <link rel="stylesheet" href="Web Dev/Class 11/indexDark.css">
-        <!----> 
+        <link rel="stylesheet" href="Web Dev/Portfolio 3/indexStyle.css">
+        
+        <script src="Web Dev/Portfolio 3/indexscript.js"></script>
+        
     </head>
 
     <body style="margin:0">
-        <!--Outermost div controlling stylesheet-->
-        <div id="shell" class="indexDark">
         
         <!--Navbar-->
         <ul id="Home">
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#About">About Me</a></li>
+            <li><a href="#About">Home</a></li>
+            <li><a href="#About">About&nbsp;Me</a></li>
             <li><a href="#Projects">Projects</a></li>
             <li><a href="#Contact">Contact</a></li>
-            <li><button id="dark" onClick="onClickStyle('indexDark')" style="display:none;">Dark Mode</button>
-                <button id="light" onclick="onClickStyle('indexLight')">Light Mode</button>
+            <li><button onClick="onClickPrint()">Print&nbsp;Page</button>
             </li>
         </ul>
-
-        <!--Style Button-->
-        <!--
-        <button id="dark" onClick="onClickStyle('indexDark')" style="display:none;">Dark Mode</button>
-        <button id="light" onclick="onClickStyle('indexLight')">Light Mode</button>
-        -->
 
         <!--About Me-->
         <div class="container">
@@ -47,29 +39,37 @@
                 <a href="https://www.geeksforgeeks.org/top-10-projects-for-beginners-to-practice-html-and-css-skills/"
                     target="blank">GeeksforGeeks Top 10 Projects for Beginners</a>.
             </p>
-    </div>
+        </div>
+
         <!--Projects-->
         <div class="projects">
             <h1 id="Projects">Projects</h1>
-            <div class="gridcontainer">
-                <a href="Web Dev/Class 1 & 2/Class2TributeEdit.html" target="_blank">Tribute</a>
+                <a href="Web Dev/Class 1 & 2/Class2TributeEdit.html" target="_blank">
+                    <img src="Web Dev/Class 1 & 2/LacksFace.jpg" alt="Henrietta Lacks Tribute Page"></a>
             
-                <a href="Web Dev/Class 3/Class3SurveyEdit.html" target="_blank">Survey</a>
+                <a href="Web Dev/Class 3/Class3SurveyEdit.html" target="_blank">
+                    <img src="Web Dev/Class 3/surveyScreenshot.jpg" alt="Survey Form"></a>
 
-                <a href="Web Dev/Class 4/Class4ParallaxEdit.html" target="_blank">Parallax</a>
+                <a href="Web Dev/Class 4/Class4ParallaxEdit.html" target="_blank">
+                    <img src="Web Dev/Class 4/WebbStarNursery.jpg" alt="Parallax Page"></a>
             
-                <a href="Web Dev/Class 5/RestaurantTestFile.html" target="_blank">Restaurant</a>
+                <a href="Web Dev/Class 5/RestaurantTestFile.html" target="_blank">
+                    <img src="Web Dev/Class 5/C5HaloHalo.jpg" alt="Restaurant Page"></a>
 
-                <a href="Web Dev/Class 6/Class6Event.html" target="_blank">Event</a>
+                <a href="Web Dev/Class 6/Class6Event.html" target="_blank">
+                    <img src="Web Dev/Class 6/NatRateLogosq.jpg" alt="Event Page"></a>
 
-                <a href="Web Dev/Class 6/Class6Music.html" target="_blank">Music</a>
+                <a href="Web Dev/Class 6/Class6Music.html" target="_blank">
+                    <img src="Web Dev/Class 6/folk-guitar-po-instrument.jpg" alt="Music Page"></a>
             
-                <a href="Web Dev/Class 7/PhotographySite.html" target="_blank">Photography</a>
+                <a href="Web Dev/Class 7/PhotographySite.html" target="_blank">
+                    <img src="Web Dev/Class 7/wildlife5.jpg" alt="Photography Page"></a>
 
-                <a href="Web Dev/Class 9/MotomalSimplePortfolio.html" target="_blank">Portfolio v.1</a>
+                <a href="Web Dev/Class 9/MotomalSimplePortfolio.html" target="_blank">
+                    <img src="Web Dev/Class 9/portfolio1screenshot.jpg" alt="Simple Portfolio"></a>
         
-                <a href="Web Dev/Class 10/TechDocJ.html" target="_blank">Technical Doc</a>
-            </div> 
+                <a href="Web Dev/Class 10/TechDocJ.html" target="_blank">
+                    <img src="Web Dev/Class 10/javaicon.png" alt="Technical Document"></a>
 
         </div>
         <!--Contact Info-->
@@ -89,45 +89,10 @@
                         Submit
                     </button>
         
-                </div>
+        </div>
         
     </div>
 
-    </div><!---->
     </body>
-
-    <!--Javascript- switches style-->
-    <script lang="text/javascript">
-        function onClickStyle(style){
-            let darkButton = document.getElementById("dark");
-            let lightButton = document.getElementById("light");
-            let outer = document.getElementById("shell");
-            shell.setAttribute("class", style);
-            if(style==="indexDark"){
-                darkButton.style.display = "none";
-                lightButton.style.display = "";
-            }
-            else{
-                darkButton.style.display = "";
-                lightButton.style.display = "none";
-                
-            }
-        }
-    </script>
-
-    <!--Javascript- controls email validation-->
-    <script lang="text/javascript">
-        function onClickFeedback(){
-            let mail = document.getElementById("email");
-            let text = document.getElementById("text");
-    
-            if(mail.value.length===0){
-                window.alert("Please enter an email");
-            }
-            else{
-                window.alert("Thank you for your submission!")
-            }
-        }
-    </script>
 
 </html>

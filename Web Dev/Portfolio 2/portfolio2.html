@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1">
+
+        <title>Tegan's Portfolio</title>
+
+        <link rel="icon" type="image/x-icon" href="Web Dev/Class 9/favicon9.ico">
+
+        <link rel="stylesheet" href="portfolio2light.css">
+        <link rel="stylesheet" href="portfolio2dark.css">
+        <!----> 
+    </head>
+
+    <body style="margin:0">
+        <!--Outermost div controlling stylesheet-->
+        <div id="shell" class="darkmode">
+        
+        <!--Navbar-->
+        <ul id="Home">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About Me</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li><button id="dark" onClick="onClickStyle('darkmode')" style="display:none;">Dark Mode</button>
+                <button id="light" onclick="onClickStyle('lightmode')">Light Mode</button>
+            </li>
+        </ul>
+
+        <!--Style Button-->
+        <!--
+        <button id="dark" onClick="onClickStyle('indexDark')" style="display:none;">Dark Mode</button>
+        <button id="light" onclick="onClickStyle('indexLight')">Light Mode</button>
+        -->
+
+        <!--About Me-->
+        <div class="container">
+            <h1 id="About">About Me</h1>
+
+            <p>
+                Hi! My name is Tegan. I'm a Computer Science major at Mercer County Community College.
+                I've taken classes in Java and Python, and this project is for my Web Dev class. I plan
+                on working in front-end web dev while continuing my education and eventually transitioning 
+                to full stack development. <br><br> Click on any of the links in the Projects section below
+                to see what I've made in this class. All of my projects are based on 
+                <a href="https://www.geeksforgeeks.org/top-10-projects-for-beginners-to-practice-html-and-css-skills/"
+                    target="blank">GeeksforGeeks Top 10 Projects for Beginners</a>.
+            </p>
+    </div>
+        <!--Projects-->
+        <div class="projects">
+            <h1 id="Projects">Projects</h1>
+            <div class="gridcontainer">
+                <a href="Web Dev/Class 1 & 2/Class2TributeEdit.html" target="_blank">Tribute</a>
+            
+                <a href="Web Dev/Class 3/Class3SurveyEdit.html" target="_blank">Survey</a>
+
+                <a href="Web Dev/Class 4/Class4ParallaxEdit.html" target="_blank">Parallax</a>
+            
+                <a href="Web Dev/Class 5/RestaurantTestFile.html" target="_blank">Restaurant</a>
+
+                <a href="Web Dev/Class 6/Class6Event.html" target="_blank">Event</a>
+
+                <a href="Web Dev/Class 6/Class6Music.html" target="_blank">Music</a>
+            
+                <a href="Web Dev/Class 7/PhotographySite.html" target="_blank">Photography</a>
+
+                <a href="Web Dev/Class 9/MotomalSimplePortfolio.html" target="_blank">Portfolio v.1</a>
+        
+                <a href="Web Dev/Class 10/TechDocJ.html" target="_blank">Technical Doc</a>
+            </div> 
+
+        </div>
+        <!--Contact Info-->
+        <div class="container">
+            <h1 id="Contact">Contact</h1>
+                <div class="form">
+        
+                    <input type="email"
+                           id="email"
+                           placeholder="Email"
+                           
+                                                >
+                           <br>
+                    <textarea id="text" placeholder="Get in touch!"></textarea>
+                           <br>
+                    <button onClick="onClickFeedback()" type="submit" value="submit">
+                        Submit
+                    </button>
+        
+                </div>
+        
+    </div>
+
+    </div><!---->
+    </body>
+
+    <!--Javascript- switches style-->
+    <script lang="text/javascript">
+        function onClickStyle(style){
+            let darkButton = document.getElementById("dark");
+            let lightButton = document.getElementById("light");
+            let outer = document.getElementById("shell");
+            shell.setAttribute("class", style);
+            if(style==="darkmode"){
+                darkButton.style.display = "none";
+                lightButton.style.display = "";
+            }
+            else{
+                darkButton.style.display = "";
+                lightButton.style.display = "none";
+                
+            }
+        }
+    </script>
+
+    <!--Javascript- controls email validation-->
+    <script lang="text/javascript">
+        function onClickFeedback(){
+            let mail = document.getElementById("email");
+            let text = document.getElementById("text");
+    
+            if(mail.value.length===0){
+                window.alert("Please enter an email");
+            }
+            else{
+                window.alert("Thank you for your submission!")
+            }
+        }
+    </script>
+
+</html>
