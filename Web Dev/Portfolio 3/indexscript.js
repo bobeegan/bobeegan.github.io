@@ -29,6 +29,3 @@ function onClickFeedback(){
     }
 }
 
-function onClickPrint(){
-    window.print();
-}

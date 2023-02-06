@@ -49,6 +49,7 @@ li button {
     font-family: inherit;
     font-size: xx-large;
     padding: 1%;
+    transition: 2s;
 }
 
 li button:hover {
@@ -93,8 +94,14 @@ img {
     height: 200px;
     width: 200px;
     display: inline-block;
-    margin: 5%;
+    margin: 6%;
     object-fit: fill;
+    transition: 2s;
+}
+
+img:hover {
+    height: 250px;
+    width: 250px;
 }
 
 .form {
@@ -105,7 +112,7 @@ img {
 }
 
 .form textarea {
-    height: 20%;
+    height: 50%;
     width: 50%;
     color: #162d33;
     background-color: #cbbfbb;
@@ -120,7 +127,8 @@ img {
     font-weight: bold;
     font-family: inherit;
     text-align: center;
-    border: hidden;
+    border-color: #162d33;
+    border-radius: 25%;
     padding: 1%;
 }
 
@@ -130,7 +138,7 @@ img {
 }
 
 .form input{
-    height: auto;
+    height: 20%;
     width: fit-content;
     background-color: #cbbfbb;
     color: #162d33;
